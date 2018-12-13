@@ -1,0 +1,242 @@
+body {
+    min-height: 100vh;  /* need this line to
+                    tell body to fill viewport */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: blue;
+}
+
+header {
+/*    display: flex;
+    flex-direction: row;*/
+    /*text-align: center;*/
+    padding: 10px;
+    height: 80px;
+}
+
+h2 {
+   font-family: sans-serif;
+    color: #2f3694;
+    position: absolute;
+    width: 50px;
+    top: 20px;
+    left: 3%;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#query {
+    /*width: 800px;*/
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    /* border: 0.1px; */
+    border: 0.1px solid #63789b;
+    /* width: 600px; */
+    /* height: 40px; */
+    width: 669px;
+    border-radius: 0;
+}
+
+#tags {
+    margin: 1px;
+    border: none;
+    border-color: #63789b;
+    width: 600px;
+    height: 40px;
+    border-radius: 0;
+    border-width: 0.1px;
+}
+
+main {
+     flex: 1 0 auto;  /* the sticky footer trick without the footer */
+     margin: 0;
+     background-color: #EDEDED;
+}
+
+#initmsg {
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #a4aebd;
+    line-height: 1.7;
+}
+
+input {
+    border-style: solid;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+p {
+    white-space: pre;
+    font-size: medium;
+    margin: 10px;
+}
+
+div#photoDisplay {
+    width: 400px;
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+div.selectedControls {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+div.normalControls {
+    display: none;
+}
+
+/* Photo tile - position and size will be given by PhotoGallery */
+div.tile {
+    backgroundColor: #eee;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+/* Tag styling */
+p.tagText {
+   /*position: absolute;*/
+   z-Index: 2;
+   color: white;
+   word-break: break-all;
+   padding: 0;
+}
+
+img {
+    display: block;
+}
+
+/* so far nothing special when image selected */
+img.normal {
+}
+
+img.selected {
+}
+
+i {
+    border: none;
+    color: #204480;
+}
+
+button {
+    padding: 0;
+    height: 40px;
+    width: 60px;
+    border: none;
+    background: none;
+    border-radius: 0;
+    border-color: #63789b;
+}
+
+.inputText {
+    color: white;
+    height: 30px;
+    background: none;
+    border: none;
+    width: 100px;
+}
+
+.addTag {
+    margin: 10px;
+    border: 1px solid;
+    border-color: #86b2b5;
+    border-radius: 6px;
+}
+
+.add {
+    width: 30px;
+    font-size: 20px;
+    color: #86b2b5;
+}
+
+#option .add {
+    color: white;
+}
+
+.tagDiv {
+    margin: 10px;
+    left: 4px;
+    top: 4px;
+    display: flex;
+    flex-direction: row;
+    background-color: #86b2b5;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 8px;
+}
+
+.rmButt {
+    width: 30px;
+}
+
+
+.rmButt .material-icons {
+    color: white;
+}
+
+#popup {
+    overflow: scroll;
+    border: 1px solid #63789b;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    height: 340px;
+    width: 668px;
+    top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+/*    right: 30%;
+    bottom: 10%;*/
+    background-color: white;
+    z-index: 3;
+}
+
+
+#chosen {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+
+#option {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 1px solid #63789b;
+}

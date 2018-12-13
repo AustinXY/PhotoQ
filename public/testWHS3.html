@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Web page for testing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="http://web.cs.ucdavis.edu/~amenta/s18/reset.css">
+    <link rel="stylesheet" type="text/css" href="testWHS3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <h2>PHOTOQ</h2>
+        <div id="query">
+            <input id="tags" onkeyup="inputCount()">
+            <button onClick="photoByTags()">
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+        <div id="popup"></div>
+    </header>
+    <main>
+        <p id="initmsg">Nothing's been searched yet!<br>Use the search above</p>
+        <div id="react"></div>
+    </main>
+
+<!-- The Javascript for this page -->
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="prop-types.js"></script>
+    <script src="react-photo-gallery.js"></script>
+    <script src="testWHS3.js"></script>
+</body>
+</html>
