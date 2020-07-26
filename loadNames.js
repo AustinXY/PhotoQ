@@ -39,7 +39,7 @@ var APIrequestObject = {"requests": [{"image": {"source": {"imageUri": "_IMGURL"
                                       "features": [{ "type": "LABEL_DETECTION" },
                                                    { "type": "LANDMARK_DETECTION"}]}]};
 
-var GCVUrl = 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyD6pTNnS9XwFQg30SPtTDWpHOaquwxkXJQ';
+var GCVUrl = 'https://vision.googleapis.com/v1/images:annotate?key=******************';
 
 var queue = [];
 
